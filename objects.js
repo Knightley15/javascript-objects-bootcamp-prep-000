@@ -1,7 +1,11 @@
-var meals = {};
+var playlist = new Object({keys: '0'});
 
-var meals = new Object ();
+ function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle
+  return playlist
+}
 
-var meals = { breakfast: "oatmeal" };
-
-var meals = new Object({ breakfast: 'oatmeal' })
+ function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName]
+  return playlist
+}
